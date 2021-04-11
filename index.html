@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css3?family=Catamaran:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <h1 id="title"></h1>
+    <div id="container">
+
+        <form id="survey-form" action="submit">
+            <h2 id="description"></h2>
+            <img id="imagene" src="./img/logo.png" alt="">
+
+
+            <div id="seccionDatos">
+                <div id="primerHijo">
+
+                    <input class="textoUsuario" name="nombre" required type="text" id="name" placeholder="Enter your full name">
+                </div>
+                <div>
+                    <input class="textoUsuario" name="email" required type="email" id="email" placeholder="Enter a valid e-mail">
+                </div>
+
+                <div>
+                    <input class="textoUsuario" name="age" required type="number" id="age" placeholder="Enter your age as a whole">
+                </div>
+
+
+
+
+
+
+            </div>
+            <div id="seccionTiempo">
+                <h3>How many hours a week do you play?</h3>
+                <ul>
+
+
+                    <li>
+                        <input type="radio" name="minusFive" id="">
+                        <label for="minusFive">Lees than five</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Five" id="">
+                        <label for="Five">Five</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="minusTen" id="">
+                        <label for="minusTen">Less than ten</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Ten" id="">
+                        <label for="Ten">Ten</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="tenToTwenty" id="">
+                        <label for="tenToTwenty">Ten to Twenty</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="twentyToTreinta" id="">
+                        <label for="twentyToTreinta">Twenty to thirty</label>
+                    </li>
+                </ul>
+            </div>
+            <div id="seccionComentarios">
+
+                <h3>What are your favorite games?</h3>
+                <ul id="favoriteGames">
+                    <li>
+                        <input type="checkbox" name="GTAV" id="" value="GTA">
+                        <label for="GTAV">GTA V</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="fortnite" id="" value="fornite">
+                        <label for="fortnite">Fortnite</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="CallOfDuty" id="" value="CallOfDuty">
+                        <label for="CallOfDuty">Call of Duty</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="FallGuys" id="" value="FallGuys">
+                        <label for="FallGuys">Fall Guys</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="theLastofUs" id="" value="theLastofUs">
+                        <label for="theLastofUs">The Last of Us</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Spider-Man" id="" value="Spider-Man">
+                        <label for="Spider-Man">Spider-Man: Miles Morales</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Hades" id="" value="Hades">
+                        <label for="Hades">Hades</label>
+                    </li>
+                </ul>
+                <textarea name="" id="submit" cols="30" rows="10"></textarea>
+            </div>
+
+            <button id="sumbit" type="submit">Submit</button>
+
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
